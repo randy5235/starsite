@@ -1,0 +1,14 @@
+.Child {
+  margin: 1em;
+}
+.Child .Actions {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Child .Actions button {
+  /* text-align: left; */
+  /* margin: 1rem, 1rem, 1rem; */
+  /* padding: 1rem, 1rem, 1rem; */
+}
