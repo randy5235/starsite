@@ -8,19 +8,17 @@ function Child(props) {
     return (
         <div className="Child">
             <div className="Display">
-           {props.name}
-            <br></br>
-                Stars Earned:
-            <br></br>
+           <h1>{props.name}</h1>
+                &#9733; Earned:
                 {count - lost || 0}
             <br></br>
-                Stars Lost:
-            <br></br>
+                &#9733; Lost:
                 {lost || 0}
             </div>
             <div className='Actions'>
                 <button onClick={() => setCount(count + 1)} >Add &#9733;</button>
                 <button onClick={() => setLost(lost + 1)} >Lose &#9733;</button>
+                <button onClick={() => { setLost(0); setCount(0); }} >Reset &#9733;</button>
             </div>
         </div>
     );
